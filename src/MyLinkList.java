@@ -1,7 +1,7 @@
 import java.util.List;
 
 //& Comparable<T>
-public class MyLinkList<T extends Comparable<T>> {
+public class MyLinkList<T extends Comparable<T>>  {
 
     public static void main(String[] args) {
         MyLinkList<Integer> list1 = new MyLinkList<>();
@@ -11,12 +11,10 @@ public class MyLinkList<T extends Comparable<T>> {
         list1.pushBack(1);
         list1.pushBack(3);
         list1.pushBack(4);
-
     }
 
 
     private Node<T> head;
-
     public int getDecimalValue(NodeInteger head) {
         if (head.next == null) {
             int count = head.val;
